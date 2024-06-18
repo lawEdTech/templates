@@ -23,5 +23,10 @@ $custom-theme-colors: (
 // merge maps together under theme-colors name
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
+// create margin of 1in
+.container-margin {
+    margin: 1in;
+}
+
 // import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
