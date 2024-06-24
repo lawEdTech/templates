@@ -1,2 +1,3 @@
 # templates
-testing bs npm
+
+Creating web component templates using js and html
