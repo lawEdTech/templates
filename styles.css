@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Define custom color variables */
+:root {
+    --navy: #002452;
+    --red: #b90e31;
+    --gold: #fabd0f;
+    --lightest-grey: #f1f2f2;
+    --light-grey: #e6e7e8;
+    --grey: #d1d3d4;
+    --medium-grey: #a7a9ac;
+    --dark-grey: #808285;
+    --darkest-grey: #58595b;
+}
+
+/* Utility classes for text colors */
+.text-navy {
+    color: var(--navy) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.text-lightest-grey {
+    color: var(--lightest-grey) !important;
+}
+
+.text-light-grey {
+    color: var(--light-grey) !important;
+}
+
+.text-grey {
+    color: var(--grey) !important;
+}
+
+.text-medium-grey {
+    color: var(--medium-grey) !important;
+}
+
+.text-dark-grey {
+    color: var(--dark-grey) !important;
+}
+
+.text-darkest-grey {
+    color: var(--darkest-grey) !important;
+}
+
+/* Utility classes for background colors */
+.bg-navy {
+    background-color: var(--navy) !important;
+}
+
+.bg-red {
+    background-color: var(--red) !important;
+}
+
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+
+.bg-lightest-grey {
+    background-color: var(--lightest-grey) !important;
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey) !important;
+}
+
+.bg-grey {
+    background-color: var(--grey) !important;
+}
+
+.bg-medium-grey {
+    background-color: var(--medium-grey) !important;
+}
+
+.bg-dark-grey {
+    background-color: var(--dark-grey) !important;
+}
+
+.bg-darkest-grey {
+    background-color: var(--darkest-grey) !important;
+}
