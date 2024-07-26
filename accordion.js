@@ -29,7 +29,7 @@ class AccordionItem extends HTMLElement {
         const collapseId = `${accordionId}-collapse`;
 
         this.innerHTML = `
-            <link href="styles.css" rel="stylesheet">
+            <link href="https://raw.githack.com/lawEdTech/templates/main/styles.css" rel="stylesheet">
             <div class="container-md">
                 <div class="accordion accordion-flush" id="${accordionId}">
                     <div class="accordion-item">
