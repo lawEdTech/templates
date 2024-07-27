@@ -13,6 +13,52 @@
     --darkest-grey: #58595b;
 }
 
+.icon-check ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.icon-check ul li {
+    margin-left: 1.5em; /* Add space for the icon */
+    position: relative; /* Position the icon */
+}
+
+.icon-check ul li::before {
+    content: "\f00c"; /* Font Awesome check icon (fa-check) */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900; /* Required for solid icons */
+    color: var(--navy); /* Use navy color for the icon */
+    position: absolute;
+    left: -1.5em; /* Position the icon to the left */
+}
+
+.icon-check .fa-check {
+    display: none; /* Hide the default icon if necessary */
+}
+
+.icon-x ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.icon-x ul li {
+    margin-left: 1.5em; /* Add space for the icon */
+    position: relative; /* Position the icon */
+}
+
+.icon-x ul li::before {
+    content: "\f00d"; /* Font Awesome check icon (fa-check) */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900; /* Required for solid icons */
+    color: var(--navy); /* Use navy color for the icon */
+    position: absolute;
+    left: -1.5em; /* Position the icon to the left */
+}
+
+.icon-check .fa-x {
+    display: none; /* Hide the default icon if necessary */
+}
+
 .jumbotron {
     min-height: 200px; /* Set the fixed height */
     width: auto; /* Width adjusts automatically */
@@ -26,6 +72,27 @@
 .jumbotron h1 {
     font-size: 2rem; /* Larger heading font size */
     margin-bottom: 10px; /* Space below the heading */
+}
+
+.large-numbers {
+    list-style: none; /* Remove default numbering */
+    counter-reset: list-counter; /* Initialize counter */
+}
+
+.large-numbers li {
+    counter-increment: list-counter; /* Increment counter for each list item */
+    position: relative;
+    padding-left: 2em; /* Adjust space for numbers */
+    color: var(--black); /* Set text color to black */
+}
+
+.large-numbers li::before {
+    content: counter(list-counter) ". "; /* Display counter value */
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem; /* Larger font size for numbers */
+    font-weight: bold; /* Optional: make numbers bold */
+    color: var(--black); /* Set number color to navy */
 }
 
 .border-navy {
