@@ -13,6 +13,33 @@
     --darkest-grey: #58595b;
 }
 
+.jumbotron {
+    min-height: 200px; /* Set the fixed height */
+    width: auto; /* Width adjusts automatically */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px; /* Optional: Padding inside the jumbotron */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.jumbotron h1 {
+    font-size: 2rem; /* Larger heading font size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.border-navy {
+    border: 5px solid var(--navy); /* 2px border with navy color */
+}
+
+.border-red {
+    border: 5px solid var(--red); /* 2px border with navy color */
+}
+
+.border-gold {
+    border: 5px solid var(--gold); /* 2px border with navy color */
+}
+
 /* Utility classes for text colors */
 .text-navy {
     color: var(--navy) !important;
