@@ -13,6 +13,40 @@
     --darkest-grey: #58595b;
 }
 
+.callout-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--navy);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.callout-box-icon {
+    font-size: 4.5rem; /* Icon size */
+    color: var(--navy);
+    margin-right: 1rem; /* Space between icon and text */
+    margin-left: 2.5rem; /* Space between icon and text */
+}
+
+.callout-box-content {
+    flex: 1; /* Allow text to take the remaining space */
+}
+
+.jumbotron {
+    min-height: 200px; /* Set the fixed height */
+    width: auto; /* Width adjusts automatically */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px; /* Optional: Padding inside the jumbotron */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.jumbotron h1 {
+    font-size: 2rem; /* Larger heading font size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
 .icon-check ul {
     list-style-type: none; /* Remove default bullets */
     padding-left: 0; /* Remove default padding */
@@ -57,21 +91,6 @@
 
 .icon-check .fa-x {
     display: none; /* Hide the default icon if necessary */
-}
-
-.jumbotron {
-    min-height: 200px; /* Set the fixed height */
-    width: auto; /* Width adjusts automatically */
-    display: flex; /* Flexbox for centering content */
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    padding: 20px; /* Optional: Padding inside the jumbotron */
-    border-radius: 5px; /* Optional: Rounded corners */
-}
-
-.jumbotron h1 {
-    font-size: 2rem; /* Larger heading font size */
-    margin-bottom: 10px; /* Space below the heading */
 }
 
 .large-numbers {
