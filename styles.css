@@ -17,6 +17,24 @@
     padding-left: 2.5rem; /* Adjust this value for more or less left margin */
 }
 
+.image-text-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    max-width: 100%;
+}
+
+.image-text-container img {
+    max-width: 400px;
+    height: auto;
+    grid-row: span 1;
+}
+
+.image-text-container p {
+    margin: 0;
+}
+
 .callout-box {
     display: flex;
     align-items: center;
