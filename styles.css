@@ -13,6 +13,10 @@
     --darkest-grey: #58595b;
 }
 
+.table td, .table th {
+    padding-left: 2.5rem; /* Adjust this value for more or less left margin */
+}
+
 .callout-box {
     display: flex;
     align-items: center;
