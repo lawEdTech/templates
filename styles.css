@@ -159,11 +159,13 @@
     content: "";
     position: absolute;
     top: 22px;
-    left: 35px; /* Position arrow to the left of the content */
-    border-width: 10px 15px 10px 0;
-    border-style: solid;
+    left: 30px; /* Position arrow to the left of the content */
+    border: medium solid var(--light-grey);
+    border-width: 0 20px 20px 0;
+    display: inline-block;
     border-color: var(--light-grey);
-    transform: rotate(135deg); /* Arrow pointing left */
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
     z-index: 1;
 }
 /* single The circles on the timeline */
