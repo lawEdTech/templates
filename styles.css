@@ -349,7 +349,7 @@
 }
 
 
-/* BORDERS */
+/* BORDERS */ 
 .border-navy {
     border: 5px solid var(--navy); /* 2px border with navy color */
 }
