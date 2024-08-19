@@ -24,6 +24,83 @@
     box-sizing: border-box;
 }
 
+/* HORIZONTAL TABS */
+.nav-tabs .nav-item {
+    flex-grow: 1; /* Makes the tabs expand equally */
+    text-align: center; /* Centers the text within the tabs */
+    border-color: var(--navy); /* Navy border to match the background */
+    margin-right: 0; /* Remove right margin from each tab */
+    margin-left: 0; /* Remove right margin from each tab */
+}
+
+.nav-tabs .nav-link {
+    padding-top: 20px; /* Increase top padding */
+    padding-bottom: 20px; /* Increase bottom padding */
+    border-radius: 1; /* Remove border radius to make tabs rectangular */
+    width: 100%; /* Ensures the button takes up the full width of its container */
+    background-color: var(--lightest-grey); /* Light grey background */
+    color: black; /* Black text color */
+    border: 1px --grey;
+    border-color: var(--grey); /* Navy border to match the background */
+}
+
+/* Active (selected) tab style */
+.nav-tabs .nav-link.active {
+    background-color: var(--navy); /* Navy background */
+    color: white; /* White text color */
+    border-color: var(--navy); /* Navy border to match the background */
+}
+/* Hover effect */
+.nav-tabs .nav-link:not(.active):hover {
+    background-color: var(--grey); /* Slightly darker grey on hover */
+    color: black;
+}
+
+/* VERICAL TABS */
+/* Container for the vertical tabs and content */
+.vertical-tabs-container {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+/* Style for the vertical tabs */
+.nav-tabs-v{
+    width: 33.33%; /* Tabs take 1/3 of the space */
+    border-right: 1px solid var(--grey); /* Right border to separate tabs from content */
+    border-radius: 10px; /* Add border-radius to make tabs rounded */
+    flex-shrink: 0; /* Prevent the tabs from stretching */
+    /* background-color: var(--light-grey);  Light grey background for the tabs  */
+}
+.nav-tabs-v .nav-link-v {
+    width: 100%;
+    border-radius: 1; /* Remove border-radius */
+    border-radius: 10px; /* Rounded corners for individual tabs */
+    border: 1px solid var(--grey); /* Add border to tabs */
+    text-align: center; /* Center the text */
+    padding: 15px; /* Increase padding to make the tabs bigger */
+    background-color: var(--light-grey); /* Light grey background */
+    color: black; /* Black text color */
+}
+.nav-tabs-v .nav-link-v.active {
+    width: 100%;
+    background-color: var(--navy); /* Active tab background color */
+    color: white; /* Active tab text color */
+    border-color: var(--navy); /* Active tab border color */
+}
+/* Content area styles */
+.tab-content-v {
+    padding: 20px; /* Add padding around the content */
+    border: 1px solid var(--grey); /* Border around content area */
+    border-left: none; /* Remove left border to merge with tabs */
+    width: 66.66%; /* Content area takes 2/3 of the space */
+}
+/* Hover effect */
+.nav-tabs-v .nav-link-v:not(.active):hover {
+    background-color: var(--grey); /* Slightly darker grey on hover */
+    color: black;
+}
+
+
 /* The alt timeline container */
 .timeline {
     position: relative;
@@ -360,6 +437,10 @@
 
 .border-gold {
     border: 5px solid var(--gold); /* 2px border with navy color */
+}
+
+.border-grey {
+    border: 1px solid var(--grey); /* 2px border with navy color */
 }
 
 

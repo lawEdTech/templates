@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://raw.githack.com/lawEdTech/templates/main/styles.css -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+<body>
+    <div class="container-fluid m-4">
+        <img src="https://queensuca-my.sharepoint.com/:i:/r/personal/iclis_queensu_ca/Documents/Images/banner.jpg?csf=1&web=1&e=1bhDkV" class="img-fluid mt-5" alt="banner">
+        <h1 class="text-navy text-center mt-5 mb-5">Vertical Tabs</h1>
+        <p class="container-fluid fs-4">Add your content here.</p>
+    </div>
+
+<!-- 
+    ID NAMING CONVENTION
+     each id has to be unique, so [tab 2 of group 2] and [tab 2 of group 3] cannot have the same id
+     naming convention: t1g2
+     which stands for tab 1 of group 2
+     ex/ t3g4 would be tab 3 of group 4
+-->
+
+    <div class="container-fluid m-4 p-0 border-grey">
+        <!-- Vertical Tabs Group of 2 -->
+        <div class="row">
+            <div class="col-3">
+                <ul class="nav nav-tabs flex-column fs-2" id="myTab2" role="tablist2">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="t1g2-tab" data-bs-toggle="tab" data-bs-target="#t1g2" type="button" role="tab" aria-controls="t1g2" aria-selected="true">Tab 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t2g2-tab" data-bs-toggle="tab" data-bs-target="#t2g2" type="button" role="tab" aria-controls="t2g2" aria-selected="false">Tab 2</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-9">
+                <!-- Vertical Tabs Content Group of 2 -->
+                <div class="tab-content m-4 fs-4" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="t1g2" role="tabpanel" aria-labelledby="t1g2-tab">
+                        <p>Content for Tab 1 vertical group of 2.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t2g2" role="tabpanel" aria-labelledby="t2g2-tab">
+                        <p>Content for Tab 2 vertical group of 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 70px;"></div>
+
+    <div class="container-fluid m-4 p-0 border-grey">
+        <!-- Vertical Tabs Group of 3 -->
+        <div class="row">
+            <div class="col-3">
+                <ul class="nav nav-tabs flex-column fs-2" id="myTab2" role="tablist2">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="t1g3-tab" data-bs-toggle="tab" data-bs-target="#t1g3" type="button" role="tab" aria-controls="t1g3" aria-selected="true">Tab 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t2g3-tab" data-bs-toggle="tab" data-bs-target="#t2g3" type="button" role="tab" aria-controls="t2g3" aria-selected="false">Tab 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t3g3-tab" data-bs-toggle="tab" data-bs-target="#t3g3" type="button" role="tab" aria-controls="t3g3" aria-selected="false">Tab 3</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-9">
+                <!-- Vertical Tabs Content Group of 3 -->
+                <div class="tab-content m-4 fs-4" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="t1g3" role="tabpanel" aria-labelledby="t1g3-tab">
+                        <p>Content for Tab 1 vertical group of 3.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t2g3" role="tabpanel" aria-labelledby="t2g3-tab">
+                        <p>Content for Tab 2 vertical group of 3.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t3g3" role="tabpanel" aria-labelledby="t3g3-tab">
+                        <p>Content for Tab 3 vertical group of 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 70px;"></div>
+
+    <div class="container-fluid m-4 p-0 border-grey">
+        <!-- Vertical Tabs Group of 4 -->
+        <div class="row">
+            <div class="col-3">
+                <ul class="nav nav-tabs flex-column fs-2" id="myTab2" role="tablist2">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="t1g4-tab" data-bs-toggle="tab" data-bs-target="#t1g4" type="button" role="tab" aria-controls="t1g4" aria-selected="true">Tab 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t2g4-tab" data-bs-toggle="tab" data-bs-target="#t2g4" type="button" role="tab" aria-controls="t2g4" aria-selected="false">Tab 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t3g4-tab" data-bs-toggle="tab" data-bs-target="#t3g4" type="button" role="tab" aria-controls="t3g4" aria-selected="false">Tab 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t4g4-tab" data-bs-toggle="tab" data-bs-target="#t4g4" type="button" role="tab" aria-controls="t4g4" aria-selected="false">Tab 4</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-9">
+                <!-- Vertical Tabs Content Group of 4 -->
+                <div class="tab-content m-4 fs-4" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="t1g4" role="tabpanel" aria-labelledby="t1g4-tab">
+                        <p>Content for Tab 1 vertical group of 4.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t2g4" role="tabpanel" aria-labelledby="t2g4-tab">
+                        <p>Content for Tab 2 vertical group of 4.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t3g4" role="tabpanel" aria-labelledby="t3g4-tab">
+                        <p>Content for Tab 3 vertical group of 4.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t4g4" role="tabpanel" aria-labelledby="t4g4-tab">
+                        <p>Content for Tab 4 vertical group of 4.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 70px;"></div>
+
+    <div class="container-fluid m-4 p-0 border-grey">
+        <!-- Vertical Tabs Group of 5 -->
+        <div class="row">
+            <div class="col-3">
+                <ul class="nav nav-tabs flex-column fs-2" id="myTab2" role="tablist2">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="t1g5-tab" data-bs-toggle="tab" data-bs-target="#t1g5" type="button" role="tab" aria-controls="t1g5" aria-selected="true">Tab 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t2g5-tab" data-bs-toggle="tab" data-bs-target="#t2g5" type="button" role="tab" aria-controls="t2g5" aria-selected="false">Tab 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t3g5-tab" data-bs-toggle="tab" data-bs-target="#t3g5" type="button" role="tab" aria-controls="t3g5" aria-selected="false">Tab 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t4g5-tab" data-bs-toggle="tab" data-bs-target="#t4g5" type="button" role="tab" aria-controls="t4g5" aria-selected="false">Tab 4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="t5g5-tab" data-bs-toggle="tab" data-bs-target="#t5g5" type="button" role="tab" aria-controls="t5g5" aria-selected="false">Tab 5</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-9">
+                <!-- Vertical Tabs Content Group of 5 -->
+                <div class="tab-content m-4 fs-4" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="t1g5" role="tabpanel" aria-labelledby="t1g5-tab">
+                        <p>Content for Tab 1 vertical group of 5.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t2g5" role="tabpanel" aria-labelledby="t2g5-tab">
+                        <p>Content for Tab 2 vertical group of 5.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t3g5" role="tabpanel" aria-labelledby="t3g5-tab">
+                        <p>Content for Tab 3 vertical group of 5.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t4g5" role="tabpanel" aria-labelledby="t4g5-tab">
+                        <p>Content for Tab 4 vertical group of 5.</p>
+                    </div>
+                    <div class="tab-pane fade" id="t5g5" role="tabpanel" aria-labelledby="t5g5-tab">
+                        <p>Content for Tab 5 vertical group of 5.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 70px;"></div>
+
+
+
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="mt-5 mb-5 border-top text-end"> 
+            <img src="https://queensuca-my.sharepoint.com/:i:/r/personal/iclis_queensu_ca/Documents/Images/logo.png?csf=1&web=1&e=yw7fFx" class="img-fluid mt-5" alt="logo">
+        </div>      
+    </div>
+</footer>
+
+</html>
