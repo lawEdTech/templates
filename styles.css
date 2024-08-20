@@ -13,6 +13,14 @@
     --darkest-grey: #58595b;
 }
 
+/* Importing Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* TABLES */
 .table td, .table th {
     padding-left: 2.5rem; /* Adjust this value for more or less left margin */
