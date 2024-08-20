@@ -15,15 +15,15 @@
 
 /* Custom container class to manage margins */
 .custom-container {
-    margin: 0 auto;
+    margin: auto;
     padding: 0 15px;
 }
 
 /* Adjust padding/margin for full-screen mode */
 @media (min-width: 992px) {
     .custom-container {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
