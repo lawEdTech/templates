@@ -20,16 +20,31 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    font-size: 1.5rem; /* 'fs-4' in Bootstrap typically means 'font-size: 1.25rem;' */
+    width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
+    max-width: 100%; /* Ensure the element spans the full width */
+    margin: 1.25rem;
+}
+
 /* Increase padding for the button */
 .custom-btn {
-    padding: 20px 30px; /* Adjust values as needed for size */
+    padding: 20px 30px; /* Adjust values as needed */
 }
+
 /* Remove box/border around the revealed text */
 .custom-card {
     border: none; /* Remove border */
     box-shadow: none; /* Remove any box shadow */
-    padding: 1; /* Optional: remove padding */
+    padding: 1rem; /* Set padding correctly */
 }
+
+/* Change button color on hover */
+.custom-btn:hover {
+    border-color: var(--gold); /* Replace with desired hover color */
+    border-width: 2px;
+}
+
 
 /* TABLES */
 .table td, .table th {
