@@ -19,7 +19,17 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-/* Specific styling for h1 elements */
+
+/* Increase padding for the button */
+.custom-btn {
+    padding: 20px 30px; /* Adjust values as needed for size */
+}
+/* Remove box/border around the revealed text */
+.custom-card {
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove any box shadow */
+    padding: 1; /* Optional: remove padding */
+}
 
 /* TABLES */
 .table td, .table th {
@@ -338,9 +348,21 @@ body {
     border-radius: 5px;
 }
 
+.callout-box-no-border {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
 .callout-box-icon {
     font-size: 4.5rem; /* Icon size */
     color: var(--navy);
+    margin-right: 1rem; /* Space between icon and text */
+    margin-left: 2.5rem; /* Space between icon and text */
+}
+.icon {
+    font-size: 6rem; /* Icon size */
+    color: var(--red);
     margin-right: 1rem; /* Space between icon and text */
     margin-left: 2.5rem; /* Space between icon and text */
 }
