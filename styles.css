@@ -30,7 +30,7 @@ h1 {
 }
 
 p {
-    font-size: 1.5rem; /* 'fs-4' in Bootstrap typically means 'font-size: 1.25rem;' */
+    font-size: 1.25rem; /* 'fs-4' in Bootstrap typically means 'font-size: 1.25rem;' */
     width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
     max-width: 100%; /* Ensure the element spans the full width */
 }
