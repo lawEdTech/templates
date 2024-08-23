@@ -70,18 +70,10 @@ p {
     font-size: 16px; /* Font size */
     font-weight: normal; /* Bold text */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: padding-right 0.3s ease, background-color 0.3s ease, margin-left 0.3s ease;; /* Smooth transition for padding-right */
 }
-
 .button-link i {
     margin-left: 10px; /* Add space between text and icon */
     transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
-}
-
-/* Add hover effect */
-.button-link:hover {
-    padding-right: 20px; /* Increase right padding on hover */
-    text-decoration: none; /* Ensure underline is still removed */
 }
 .button-link:hover i {
     margin-left: 20px; /* Increase margin-left on hover to move icon */
