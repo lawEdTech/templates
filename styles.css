@@ -33,7 +33,6 @@ p {
     font-size: 1.5rem; /* 'fs-4' in Bootstrap typically means 'font-size: 1.25rem;' */
     width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
     max-width: 100%; /* Ensure the element spans the full width */
-    margin: 1.25rem;
 }
 
 .button-link {
@@ -71,6 +70,7 @@ p {
 /* Increase padding for the button */
 .custom-btn {
     padding: 20px 30px; /* Adjust values as needed */
+    transition: all 0.3s ease;
 }
 
 /* Remove box/border around the revealed text */
