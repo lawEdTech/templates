@@ -561,8 +561,8 @@ p {
     content: counter(list-counter) ". "; /* Display counter value */
     position: absolute;
     left: 0;
-    font-size: 1.5rem; /* Larger font size for numbers */
-    font-weight: bold; /* Optional: make numbers bold */
+    font-size: 1.3rem; /* Larger font size for numbers */
+    font-weight: medium; /* make numbers bold */
     color: var(--black); /* Set number color to navy */
 }
 
