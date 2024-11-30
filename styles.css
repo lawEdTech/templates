@@ -2,660 +2,760 @@
 
 /* Define custom color variables */
 :root {
-    --navy: #002452;
-    --red: #b90e31;
-    --gold: #fabd0f;
-    --lightest-grey: #f1f2f2;
-    --light-grey: #e6e7e8;
-    --grey: #d1d3d4;
-    --medium-grey: #a7a9ac;
-    --dark-grey: #808285;
-    --darkest-grey: #58595b;
+  --navy: #002452;
+  --red: #b90e31;
+  --gold: #fabd0f;
+  --lightest-grey: #f1f2f2;
+  --light-grey: #e6e7e8;
+  --grey: #d1d3d4;
+  --medium-grey: #a7a9ac;
+  --dark-grey: #808285;
+  --darkest-grey: #58595b;
 }
 
 /* Importing Open Sans from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 h1 {
-    text-align: center; /* Center the text */
-    margin-top: 3rem; /* Top margin */
-    margin-bottom: 3rem; /* Bottom margin */
-    font-size: 2.5rem; /* Adjust font size as needed */
-    font-weight: 500; /* Make the text bold (if desired) */
-    line-height: 1.2; /* Adjust line height */
-    color: var(--navy);
+  text-align: center; /* Center the text */
+  margin-top: 3rem; /* Top margin */
+  margin-bottom: 3rem; /* Bottom margin */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: 500; /* Make the text bold (if desired) */
+  line-height: 1.2; /* Adjust line height */
+  color: var(--navy);
 }
 h2 {
-    text-align: center; /* Center the text */
-    margin-top: 3rem; /* Top margin */
-    margin-bottom: 3rem; /* Bottom margin */
-    font-size: 2.5rem; /* Adjust font size as needed */
-    font-weight: 500; /* Make the text bold (if desired) */
-    line-height: 1.2; /* Adjust line height */
-    color: var(--red);
+  text-align: center; /* Center the text */
+  margin-top: 3rem; /* Top margin */
+  margin-bottom: 3rem; /* Bottom margin */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: 500; /* Make the text bold (if desired) */
+  line-height: 1.2; /* Adjust line height */
+  color: var(--red);
 }
 h3 {
-    color: var(--navy); /* Text color */
-    font-size: 2rem; /* Adjust font size as needed */
-    font-weight: 500; /* Make the subheading bold */
-    margin-top: 1rem; /* Add space above the subheading */
-    margin-bottom: 1rem; /* Add space below the subheading */
+  color: var(--navy); /* Text color */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: 500; /* Make the subheading bold */
+  margin-top: 1rem; /* Add space above the subheading */
+  margin-bottom: 1rem; /* Add space below the subheading */
 }
 h4 {
-    color: var(--red); /* Text color */
-    font-size: 2rem; /* Adjust font size as needed */
-    font-weight: 500; /* Make the subheading bold */
-    margin-top: 1rem; /* Add space above the subheading */
-    margin-bottom: 1rem; /* Add space below the subheading */
+  color: var(--red); /* Text color */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: 500; /* Make the subheading bold */
+  margin-top: 1rem; /* Add space above the subheading */
+  margin-bottom: 1rem; /* Add space below the subheading */
 }
 p {
-    font-size: 1.25rem; /* 'fs-5' in Bootstrap typically means 'font-size: 1.25rem;' */
-    width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
-    max-width: 100%; /* Ensure the element spans the full width */
+  font-size: 1.25rem; /* 'fs-5' in Bootstrap typically means 'font-size: 1.25rem;' */
+  width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
+  max-width: 100%; /* Ensure the element spans the full width */
 }
 
 /* ACCORDION CUSTOM */
 
 .accordion {
-    width: 100%;
-    max-width: full;
-    margin: 0 auto;
-    }
+  width: 100%;
+  max-width: full;
+  margin: 0 auto;
+}
 
-    .accordion-item {
-    border: 1px solid #ddd;
-    margin-bottom: 8px;
-    }
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+}
 
-    .accordion-header {
-    display: block;
-    padding: 15px;
-    background-color: #f5f5f5;
-    cursor: pointer;
-    }
+.accordion-header {
+  display: block;
+  padding: 15px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
 
-    .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 15px;
-    }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 15px;
+}
 
-    input[type="checkbox"] {
-    display: none;
-    }
+input[type="checkbox"] {
+  display: none;
+}
 
-    input[type="checkbox"]:checked ~ .accordion-content {
-    max-height: 200px;
-    padding: 15px;
-    }
+input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 200px;
+  padding: 15px;
+}
 
-    .accordion-content p {
-    margin: 15px 0;
-    }
-
+.accordion-content p {
+  margin: 15px 0;
+}
 
 .button-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding as needed */
-    min-width: 150px;
-    color: black; /* Button text color */
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    font-weight: normal; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust padding as needed */
+  min-width: 150px;
+  color: black; /* Button text color */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: normal; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 .button-link i {
-    margin-left: 10px; /* Add space between text and icon */
-    transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
+  margin-left: 10px; /* Add space between text and icon */
+  transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
 }
 .button-link:hover i {
-    margin-left: 20px; /* Increase margin-left on hover to move icon */
+  margin-left: 20px; /* Increase margin-left on hover to move icon */
 }
-
-
 
 /* Increase padding for the button */
 .custom-btn {
-    padding: 20px 30px; /* Adjust values as needed */
-    transition: all 0.3s ease;
+  padding: 20px 30px; /* Adjust values as needed */
+  transition: all 0.3s ease;
 }
 
 /* Remove box/border around the revealed text */
 .custom-card {
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove any box shadow */
-    padding: 1rem; /* Set padding correctly */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove any box shadow */
+  padding: 1rem; /* Set padding correctly */
 }
 
 /* Change button color on hover */
 .custom-btn:hover {
-    border-color: var(--gold); /* Replace with desired hover color */
-    border-width: 3px;
+  border-color: var(--gold); /* Replace with desired hover color */
+  border-width: 3px;
 }
-
 
 /* TABLES */
-.table td, .table th {
-    padding-left: 2.5rem; /* Adjust this value for more or less left margin */
+.table td,
+.table th {
+  padding-left: 2.5rem; /* Adjust this value for more or less left margin */
 }
-
 
 /* TIMELINE */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* TABS FROM CODEPEN */
+.tabbed {
+  overflow-x: hidden; /* so we could easily hide the radio inputs */
+  margin: 10px 0;
+  padding-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.tabbed [type="radio"] {
+  /* hiding the inputs */
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Ensures the tabs container spans the entire width */
+}
+
+.tab {
+  flex: 1; /* Ensures each tab takes an equal share of the available space */
+}
+
+.tab > label {
+  display: block;
+  text-align: center; /* Center the text inside the tabs */
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: var(--light-grey);
+  color: black;
+  font-size: 28px;
+  font-weight: semibold;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.tab:hover label {
+  background: var(--grey);
+  color: black;
+}
+
+.tab-content {
+  display: none;
+  color: black;
+  margin: 16px;
+}
+
+/* For the active tabs */
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label,
+.tabbed
+  [type="radio"]:nth-of-type(5):checked
+  ~ .tabs
+  .tab:nth-of-type(5)
+  label {
+  border-bottom-color: #fff;
+  background: var(--navy);
+  color: white;
+  border-radius: 10px;
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4),
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tab-content:nth-of-type(5) {
+  display: block;
 }
 
 /* HORIZONTAL TABS */
-.nav-tabs .nav-item {
-    flex-grow: 1; /* Makes the tabs expand equally */
-    text-align: center; /* Centers the text within the tabs */
-    border-color: var(--navy); /* Navy border to match the background */
-    margin-right: 0; /* Remove right margin from each tab */
-    margin-left: 0; /* Remove right margin from each tab */
+/* Container styling for tabs */
+/* .nav-tabs-container {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  border-radius: 10px;  Rounded corners 
 }
 
-.nav-tabs .nav-link {
-    padding-top: 20px; /* Increase top padding */
-    padding-bottom: 20px; /* Increase bottom padding */
-    border-radius: 1; /* Remove border radius to make tabs rectangular */
-    width: 100%; /* Ensures the button takes up the full width of its container */
-    background-color: var(--lightest-grey); /* Light grey background */
-    color: black; /* Black text color */
-    border: 1px --grey;
-    border-color: var(--grey); /* Navy border to match the background */
+.nav-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: var(--lightest-grey);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;  Rounded corners 
 }
 
-/* Active (selected) tab style */
-.nav-tabs .nav-link.active {
-    background-color: var(--navy); /* Navy background */
-    color: white; /* White text color */
-    border-color: var(--navy); /* Navy border to match the background */
+.nav-tab:hover {
+  background-color: var(--light-grey);
 }
-/* Hover effect */
-.nav-tabs .nav-link:not(.active):hover {
-    background-color: var(--grey); /* Slightly darker grey on hover */
-    color: black;
+
+.nav-tab:active,
+input[type="radio"]:checked + .nav-tab {
+  background-color: var(--navy);
+  color: white;
+  border-bottom: 2px solid transparent;
+  font-weight: semibold;
+  border-radius: 10px;  Rounded corners 
 }
+/* 
+/* Hide radio inputs 
+input[type="radio"] {
+  display: none;
+}
+
+/* Tab content styling 
+.tab-content {
+  padding: 12px;
+  color: black;
+  font-weight: semibold;
+}
+
+/* Default hidden state for tab panes 
+.tab-pane {
+  display: none; /* Start hidden 
+}
+
+/* Show the selected tab pane 
+#tab1:checked ~ .tab-content .tab1-content {
+  display: block;
+}
+#tab2:checked ~ .tab-content .tab2-content {
+  display: block;
+}
+ Show the selected tab pane 
+#tab1:checked ~ .tab-content #tab1,
+#tab2:checked ~ .tab-content #tab2 {
+  /* display: block; */
+/* opacity: 1;
+  transform: translateY(0);
+}  */
 
 /* VERICAL TABS */
 /* Container for the vertical tabs and content */
 .vertical-tabs-container {
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
 }
 /* Style for the vertical tabs */
-.nav-tabs-v{
-    width: 33.33%; /* Tabs take 1/3 of the space */
-    border-right: 1px solid var(--grey); /* Right border to separate tabs from content */
-    border-radius: 10px; /* Add border-radius to make tabs rounded */
-    flex-shrink: 0; /* Prevent the tabs from stretching */
-    /* background-color: var(--light-grey);  Light grey background for the tabs  */
+.nav-tabs-v {
+  width: 33.33%; /* Tabs take 1/3 of the space */
+  border-right: 1px solid var(--grey); /* Right border to separate tabs from content */
+  border-radius: 10px; /* Add border-radius to make tabs rounded */
+  flex-shrink: 0; /* Prevent the tabs from stretching */
+  /* background-color: var(--light-grey);  Light grey background for the tabs  */
 }
 .nav-tabs-v .nav-link-v {
-    width: 100%;
-    border-radius: 1; /* Remove border-radius */
-    border-radius: 10px; /* Rounded corners for individual tabs */
-    border: 1px solid var(--grey); /* Add border to tabs */
-    text-align: center; /* Center the text */
-    padding: 15px; /* Increase padding to make the tabs bigger */
-    background-color: var(--light-grey); /* Light grey background */
-    color: black; /* Black text color */
+  width: 100%;
+  border-radius: 1; /* Remove border-radius */
+  border-radius: 10px; /* Rounded corners for individual tabs */
+  border: 1px solid var(--grey); /* Add border to tabs */
+  text-align: center; /* Center the text */
+  padding: 15px; /* Increase padding to make the tabs bigger */
+  background-color: var(--light-grey); /* Light grey background */
+  color: black; /* Black text color */
 }
 .nav-tabs-v .nav-link-v.active {
-    width: 100%;
-    background-color: var(--navy); /* Active tab background color */
-    color: white; /* Active tab text color */
-    border-color: var(--navy); /* Active tab border color */
+  width: 100%;
+  background-color: var(--navy); /* Active tab background color */
+  color: white; /* Active tab text color */
+  border-color: var(--navy); /* Active tab border color */
 }
 /* Content area styles */
 .tab-content-v {
-    padding: 20px; /* Add padding around the content */
-    border: 1px solid var(--grey); /* Border around content area */
-    border-left: none; /* Remove left border to merge with tabs */
-    width: 66.66%; /* Content area takes 2/3 of the space */
+  padding: 20px; /* Add padding around the content */
+  border: 1px solid var(--grey); /* Border around content area */
+  border-left: none; /* Remove left border to merge with tabs */
+  width: 66.66%; /* Content area takes 2/3 of the space */
 }
 /* Hover effect */
 .nav-tabs-v .nav-link-v:not(.active):hover {
-    background-color: var(--grey); /* Slightly darker grey on hover */
-    color: black;
+  background-color: var(--grey); /* Slightly darker grey on hover */
+  color: black;
 }
-
 
 /* The alt timeline container */
 .timeline {
-    position: relative;
-    max-width:1000px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* The alt vertical ruler (timeline) */
 .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: var(--navy);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px; /* Centers the line */
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--navy);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; /* Centers the line */
 }
 
 /* Container around content */
 .bin {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
 }
 
 /* The circles on the timeline */
 .bin::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: var(--gold);
-    border: 4px solid var(--navy);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gold);
+  border: 4px solid var(--navy);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* Place the container to the left */
 .left {
-    left: 0;
-    text-align: left;
+  left: 0;
+  text-align: left;
 }
 
 /* Place the container to the right */
 .right {
-    left: 50%;
-    text-align: left;
+  left: 50%;
+  text-align: left;
 }
 
 /* Adjust the circle position for the left and right containers */
 .left::after {
-    right: -12px;
+  right: -12px;
 }
 
 .right::after {
-    left: -12px;
+  left: -12px;
 }
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid var(--light-grey);
-    border-width: 0 20px 20px 0;
-    display: inline-block;
-    border-color: var(--light-grey);
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--light-grey);
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  border-color: var(--light-grey);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid var(--light-grey);
-    border-width: 0 20px 20px 0;
-    display: inline-block;
-    border-color: var(--light-grey);
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--light-grey);
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  border-color: var(--light-grey);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 /* The actual content inside each container */
 .content {
-    padding: 20px 30px;
-    background-color: var(--light-grey);
-    position: relative;
-    border-radius: 6px;
+  padding: 20px 30px;
+  background-color: var(--light-grey);
+  position: relative;
+  border-radius: 6px;
 }
 
 /* The single timeline container */
 .s-timeline {
-    position: relative;
-    max-width: 600px; 
-    margin: 0; 
+  position: relative;
+  max-width: 600px;
+  margin: 0;
 }
 /* The single vertical ruler (timeline) */
 .s-timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: var(--navy);
-    top: 0;
-    bottom: 0;
-    left: 55px; /* Left-align the vertical line */
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--navy);
+  top: 0;
+  bottom: 0;
+  left: 55px; /* Left-align the vertical line */
 }
 /* single Container around content */
 .s-bin {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 100%; /* Full width for each box */
-    text-align: left; /* Ensure text is aligned to the left */
-    margin-left: 6px; /* Align content slightly away from the line */
-    left: 70px; /* Left-align the vertical line */
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%; /* Full width for each box */
+  text-align: left; /* Ensure text is aligned to the left */
+  margin-left: 6px; /* Align content slightly away from the line */
+  left: 70px; /* Left-align the vertical line */
 }
 
 /* single Add arrows to the right container (pointing left) */
 .s-bin::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 30px; /* Position arrow to the left of the content */
-    border: medium solid var(--light-grey);
-    border-width: 0 20px 20px 0;
-    display: inline-block;
-    border-color: var(--light-grey);
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 30px; /* Position arrow to the left of the content */
+  border: medium solid var(--light-grey);
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  border-color: var(--light-grey);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  z-index: 1;
 }
 /* single The circles on the timeline */
 .s-bin::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: var(--gold);
-    border: 4px solid var(--navy);
-    top: 15px;
-    left: -30px; /* Position the circle on the vertical line */
-    border-radius: 50%;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gold);
+  border: 4px solid var(--navy);
+  top: 15px;
+  left: -30px; /* Position the circle on the vertical line */
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-    /* Place the timeline to the left */
-    .timeline::after {
-        left: 31px;
-    }
+  /* Place the timeline to the left */
+  .timeline::after {
+    left: 31px;
+  }
 
-    /* Full-width containers */
-    .bin {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
+  /* Full-width containers */
+  .bin {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
-    /* Make sure that all arrows are pointing leftwards */
-    .bin::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
+  /* Make sure that all arrows are pointing leftwards */
+  .bin::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-        left: 15px;
-    }
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
 
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 }
 
 /* single Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-    /* Place the timeline to the left */
-    .s-timeline::after {
-        left: 0;
-    }
+  /* Place the timeline to the left */
+  .s-timeline::after {
+    left: 0;
+  }
 
-    /* Full-width containers */
-    .s-bin {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
+  /* Full-width containers */
+  .s-bin {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
-    /* Make sure that all arrows are pointing leftwards */
-    .s-bin::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
+  /* Make sure that all arrows are pointing leftwards */
+  .s-bin::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-    /* Make sure all circles are at the same spot */
-    .s-bin::after {
-        left: 15px;
-    }
+  /* Make sure all circles are at the same spot */
+  .s-bin::after {
+    left: 15px;
+  }
 }
-
 
 /* CALLOUT BOXES */
 .callout-box {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--navy);
-    padding: 1rem;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--navy);
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .callout-box-no-border {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
 .callout-box-icon {
-    font-size: 4.5rem; /* Icon size */
-    color: var(--navy);
-    margin-right: 1rem; /* Space between icon and text */
-    margin-left: 2.5rem; /* Space between icon and text */
+  font-size: 4.5rem; /* Icon size */
+  color: var(--navy);
+  margin-right: 1rem; /* Space between icon and text */
+  margin-left: 2.5rem; /* Space between icon and text */
 }
 .icon {
-    font-size: 6rem; /* Icon size */
-    color: var(--red);
-    margin-right: 1rem; /* Space between icon and text */
-    margin-left: 2.5rem; /* Space between icon and text */
+  font-size: 6rem; /* Icon size */
+  color: var(--red);
+  margin-right: 1rem; /* Space between icon and text */
+  margin-left: 2.5rem; /* Space between icon and text */
 }
 
 .callout-box-content {
-    flex: 1; /* Allow text to take the remaining space */
+  flex: 1; /* Allow text to take the remaining space */
 }
 
 .jumbotron {
-    min-height: 200px; /* Set the fixed height */
-    width: auto; /* Width adjusts automatically */
-    display: flex; /* Flexbox for centering content */
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    padding: 20px; /* Optional: Padding inside the jumbotron */
-    border-radius: 5px; /* Optional: Rounded corners */
+  min-height: 200px; /* Set the fixed height */
+  width: auto; /* Width adjusts automatically */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 20px; /* Optional: Padding inside the jumbotron */
+  border-radius: 5px; /* Optional: Rounded corners */
 }
 
 .jumbotron h1 {
-    font-size: 2rem; /* Larger heading font size */
-    margin-bottom: 10px; /* Space below the heading */
+  font-size: 2rem; /* Larger heading font size */
+  margin-bottom: 10px; /* Space below the heading */
 }
-
 
 /* ICONS */
 .icon-check ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
 .icon-check ul li {
-    margin-left: 1.5em; /* Add space for the icon */
-    position: relative; /* Position the icon */
+  margin-left: 1.5em; /* Add space for the icon */
+  position: relative; /* Position the icon */
 }
 
 .icon-check ul li::before {
-    content: "\f00c"; /* Font Awesome check icon (fa-check) */
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900; /* Required for solid icons */
-    color: var(--navy); /* Use navy color for the icon */
-    position: absolute;
-    left: -1.5em; /* Position the icon to the left */
+  content: "\f00c"; /* Font Awesome check icon (fa-check) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Required for solid icons */
+  color: var(--navy); /* Use navy color for the icon */
+  position: absolute;
+  left: -1.5em; /* Position the icon to the left */
 }
 
 .icon-check .fa-check {
-    display: none; /* Hide the default icon if necessary */
+  display: none; /* Hide the default icon if necessary */
 }
 
 .icon-x ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
 .icon-x ul li {
-    margin-left: 1.5em; /* Add space for the icon */
-    position: relative; /* Position the icon */
+  margin-left: 1.5em; /* Add space for the icon */
+  position: relative; /* Position the icon */
 }
 
 .icon-x ul li::before {
-    content: "\f00d"; /* Font Awesome check icon (fa-check) */
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900; /* Required for solid icons */
-    color: var(--navy); /* Use navy color for the icon */
-    position: absolute;
-    left: -1.5em; /* Position the icon to the left */
+  content: "\f00d"; /* Font Awesome check icon (fa-check) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Required for solid icons */
+  color: var(--navy); /* Use navy color for the icon */
+  position: absolute;
+  left: -1.5em; /* Position the icon to the left */
 }
 
 .icon-check .fa-x {
-    display: none; /* Hide the default icon if necessary */
+  display: none; /* Hide the default icon if necessary */
 }
 
 .large-numbers {
-    list-style: none; /* Remove default numbering */
-    counter-reset: list-counter; /* Initialize counter */
+  list-style: none; /* Remove default numbering */
+  counter-reset: list-counter; /* Initialize counter */
 }
 
 .large-numbers li {
-    counter-increment: list-counter; /* Increment counter for each list item */
-    position: relative;
-    padding-left: 2em; /* Adjust space for numbers */
-    color: var(--black); /* Set text color to black */
+  counter-increment: list-counter; /* Increment counter for each list item */
+  position: relative;
+  padding-left: 2em; /* Adjust space for numbers */
+  color: var(--black); /* Set text color to black */
 }
 
 .large-numbers li::before {
-    content: counter(list-counter) ". "; /* Display counter value */
-    position: absolute;
-    left: 0;
-    font-size: 1.3rem; /* Larger font size for numbers */
-    font-weight: medium; /* make numbers bold */
-    color: var(--black); /* Set number color to navy */
+  content: counter(list-counter) ". "; /* Display counter value */
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem; /* Larger font size for numbers */
+  font-weight: medium; /* make numbers bold */
+  color: var(--black); /* Set number color to navy */
 }
 
-
-/* BORDERS */ 
+/* BORDERS */
 .border-navy {
-    border: 5px solid var(--navy); /* 2px border with navy color */
+  border: 5px solid var(--navy); /* 2px border with navy color */
 }
 
 .border-red {
-    border: 5px solid var(--red); /* 2px border with navy color */
+  border: 5px solid var(--red); /* 2px border with navy color */
 }
 
 .border-gold {
-    border: 5px solid var(--gold); /* 2px border with navy color */
+  border: 5px solid var(--gold); /* 2px border with navy color */
 }
 
 .border-grey {
-    border: 1px solid var(--grey); /* 2px border with navy color */
+  border: 1px solid var(--grey); /* 2px border with navy color */
 }
-
 
 /* TEXT COLORS */
 .text-navy {
-    color: var(--navy) !important;
+  color: var(--navy) !important;
 }
 
 .text-red {
-    color: var(--red) !important;
+  color: var(--red) !important;
 }
 
 .text-gold {
-    color: var(--gold) !important;
+  color: var(--gold) !important;
 }
 
 .text-lightest-grey {
-    color: var(--lightest-grey) !important;
+  color: var(--lightest-grey) !important;
 }
 
 .text-light-grey {
-    color: var(--light-grey) !important;
+  color: var(--light-grey) !important;
 }
 
 .text-grey {
-    color: var(--grey) !important;
+  color: var(--grey) !important;
 }
 
 .text-medium-grey {
-    color: var(--medium-grey) !important;
+  color: var(--medium-grey) !important;
 }
 
 .text-dark-grey {
-    color: var(--dark-grey) !important;
+  color: var(--dark-grey) !important;
 }
 
 .text-darkest-grey {
-    color: var(--darkest-grey) !important;
+  color: var(--darkest-grey) !important;
 }
-
 
 /* BACKGROOUND COLORS */
 .bg-navy {
-    background-color: var(--navy) !important;
+  background-color: var(--navy) !important;
 }
 
 .bg-red {
-    background-color: var(--red) !important;
+  background-color: var(--red) !important;
 }
 
 .bg-gold {
-    background-color: var(--gold) !important;
+  background-color: var(--gold) !important;
 }
 
 .bg-lightest-grey {
-    background-color: var(--lightest-grey) !important;
+  background-color: var(--lightest-grey) !important;
 }
 
 .bg-light-grey {
-    background-color: var(--light-grey) !important;
+  background-color: var(--light-grey) !important;
 }
 
 .bg-grey {
-    background-color: var(--grey) !important;
+  background-color: var(--grey) !important;
 }
 
 .bg-medium-grey {
-    background-color: var(--medium-grey) !important;
+  background-color: var(--medium-grey) !important;
 }
 
 .bg-dark-grey {
-    background-color: var(--dark-grey) !important;
+  background-color: var(--dark-grey) !important;
 }
 
 .bg-darkest-grey {
-    background-color: var(--darkest-grey) !important;
+  background-color: var(--darkest-grey) !important;
 }
