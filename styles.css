@@ -57,8 +57,41 @@ p {
   max-width: 100%; /* Ensure the element spans the full width */
 }
 
-/* ACCORDION CUSTOM */
+/* CLICK REVEAL */
+.click-reveal-toggle {
+  display: none; /* Hide the checkbox */
+}
 
+/* Default hidden state for the reveal content */
+.click-reveal-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0; /* Ensure padding collapses when hidden */
+}
+
+/* When the checkbox is checked, reveal the content */
+.click-reveal-toggle:checked ~ .click-reveal-content {
+  max-height: 500px; /* Set a max-height large enough for your content */
+  padding: 16px; /* Restore padding */
+}
+
+/* Style adjustments for the button */
+label[for="clickreveal1-toggle"] {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Hover effect for the button */
+label[for="clickreveal1-toggle"]:hover {
+  background-color: darken(var(--navy), 10%);
+}
+
+/* ACCORDION CUSTOM */
 .accordion {
   width: 100%;
   max-width: full;
@@ -112,11 +145,12 @@ input[type="checkbox"]:checked ~ .accordion-content {
   cursor: pointer; /* Pointer cursor on hover */
 }
 .button-link i {
-  margin-left: 10px; /* Add space between text and icon */
-  transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
+  margin-left: 10px; /* Space between text and icon */
+  transition: transform 0.3s ease; /* Smooth transition for movement */
 }
+
 .button-link:hover i {
-  margin-left: 20px; /* Increase margin-left on hover to move icon */
+  transform: translate(5px, -3px); /* Move the icon 10px right and 10px up */
 }
 
 /* Increase padding for the button */
