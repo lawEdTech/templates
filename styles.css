@@ -57,39 +57,55 @@ p {
   max-width: 100%; /* Ensure the element spans the full width */
 }
 
-/* CLICK REVEAL */
-.click-reveal-toggle {
-  display: none; /* Hide the checkbox */
-}
-
-/* Default hidden state for the reveal content */
-.click-reveal-content {
+/* Smooth collapse animation */
+.collapse {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0; /* Ensure padding collapses when hidden */
+  transition: max-height 0.5s ease-out;
 }
 
-/* When the checkbox is checked, reveal the content */
-.click-reveal-toggle:checked ~ .click-reveal-content {
-  max-height: 500px; /* Set a max-height large enough for your content */
-  padding: 16px; /* Restore padding */
+input[type="checkbox"]:checked ~ .collapse {
+  max-height: 500px; /* Adjust to fit content */
+  overflow: visible;
 }
 
-/* Style adjustments for the button */
-label[for="clickreveal1-toggle"] {
+/* Click reveal  */
+.clickreveal {
+  width: 100%;
+  max-width: full;
+  margin: 0 auto;
+}
+.clickreveal-item {
+  border: none;
+  margin-bottom: 8px;
+}
+.clickreveal-header {
+  width: 15%;
+  display: block;
+  padding: 15px;
+  background-color: #002452;
   cursor: pointer;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 5px;
-  text-align: center;
+  color: white;
+  border-radius: 10px;
 }
-
-/* Hover effect for the button */
-label[for="clickreveal1-toggle"]:hover {
-  background-color: darken(var(--navy), 10%);
+.clickreveal-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 15px;
+  padding-left: 0;
 }
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .clickreveal-content {
+  max-height: 500px;
+  padding: 15px;
+}
+.clickreveal-contentt p {
+  margin: 15px 0;
+}
+/* Click reveal  */
 
 /* ACCORDION CUSTOM */
 .accordion {
@@ -129,6 +145,7 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .accordion-content p {
   margin: 15px 0;
 }
+/* ACCORDION CUSTOM */
 
 .button-link {
   display: inline-flex;
