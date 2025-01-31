@@ -69,43 +69,50 @@ input[type="checkbox"]:checked ~ .collapse {
   overflow: visible;
 }
 
-/* Click reveal  */
+/* Click reveal */
 .clickreveal {
   width: 100%;
-  max-width: full;
   margin: 0 auto;
 }
+
 .clickreveal-item {
   border: none;
   margin-bottom: 8px;
 }
+
 .clickreveal-header {
-  width: 15%;
-  display: block;
+  display: inline-flex; /* Ensures text stays in one line */
+  justify-content: center; /* Centers the text */
+  align-items: center; /* Vertically aligns the text */
+  white-space: nowrap;
+  overflow: hidden; /* Hides overflow */
   padding: 15px;
-  background-color: #002452;
+  background-color: var(--navy);
   cursor: pointer;
   color: white;
   border-radius: 10px;
 }
+
 .clickreveal-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   padding: 0 15px;
-  padding-left: 0;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"]:checked ~ .clickreveal-content {
   max-height: 500px;
-  padding: 15px;
+  padding: 15px; /* Adds padding when opened */
 }
-.clickreveal-contentt p {
+
+.clickreveal-content p {
   margin: 15px 0;
 }
-/* Click reveal  */
+/* End Click reveal */
 
 /* ACCORDION CUSTOM */
 .accordion {
