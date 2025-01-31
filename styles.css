@@ -91,6 +91,8 @@ input[type="checkbox"]:checked ~ .collapse {
   cursor: pointer;
   color: white;
   border-radius: 10px;
+  border: 2px solid transparent; /* Default border (invisible) */
+  transition: border 0.3s ease-in-out; /* Smooth transition */
 }
 
 .clickreveal-content {
@@ -98,6 +100,16 @@ input[type="checkbox"]:checked ~ .collapse {
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   padding: 0 15px;
+}
+
+/* Add yellow border on hover */
+.clickreveal-header:hover {
+  border: 2px solid var(--gold);
+}
+
+/* Add yellow border when checkbox is checked (open state) */
+input[type="checkbox"]:checked + .clickreveal-header {
+  border: 2px solid var(--gold);
 }
 
 input[type="checkbox"] {
