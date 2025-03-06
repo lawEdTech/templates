@@ -1,5 +1,39 @@
 /* styles.css */
 
+/* Ensure accordions are open in Brightspace editor but closed otherwise */
+.d2l-html-editor .accordion-collapse,
+.d2l-html-editor .collapse {
+  display: block !important;
+  height: auto !important;
+}
+
+:not(.d2l-html-editor) .accordion-collapse:not(.show),
+:not(.d2l-html-editor) .collapse:not(.show) {
+  display: none !important;
+}
+
+/* Tabs: Keep content visible in editor but hidden when inactive */
+.d2l-html-editor .tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+:not(.d2l-html-editor) .tab-pane:not(.active) {
+  display: none !important;
+}
+
+/* Click-to-reveal: Ensure visibility in editor */
+.d2l-html-editor [data-bs-toggle="collapse"] {
+  pointer-events: none !important;
+}
+
+.d2l-html-editor .collapse,
+.d2l-html-editor .collapse:not(.show) {
+  display: block !important;
+  height: auto !important;
+}
+
 /* Define custom color variables */
 :root {
   --navy: #002452;
