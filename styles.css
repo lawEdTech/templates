@@ -258,16 +258,17 @@ input[type="checkbox"]:checked ~ .accordion-content {
   box-sizing: border-box;
 }
 
+/* TABS */
 /* HORIZONTAL TABS*/
+/* HORIZONTAL TABS */
 .tabbed {
-  overflow-x: hidden; /* so we could easily hide the radio inputs */
+  overflow-x: hidden;
   margin: 10px 0;
   padding-bottom: 16px;
   border: 1px solid #ccc;
 }
 
 .tabbed [type="radio"] {
-  /* hiding the inputs */
   display: none;
 }
 
@@ -276,16 +277,16 @@ input[type="checkbox"]:checked ~ .accordion-content {
   align-items: stretch;
   list-style: none;
   padding: 0;
-  width: 100%; /* Ensures the tabs container spans the entire width */
+  width: 100%;
 }
 
 .tab {
-  flex: 1; /* Ensures each tab takes an equal share of the available space */
+  flex: 1;
 }
 
 .tab > label {
   display: block;
-  text-align: center; /* Center the text inside the tabs */
+  text-align: center;
   padding: 15px;
   border: 1px solid #ccc;
   background: var(--light-grey);
@@ -308,19 +309,16 @@ input[type="checkbox"]:checked ~ .accordion-content {
   margin: 16px;
 }
 
-/* For the active tabs */
-/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+/* Show active tab */
 .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
 .tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
 .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
 .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
-.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label,
 .tabbed
   [type="radio"]:nth-of-type(5):checked
   ~ .tabs
   .tab:nth-of-type(5)
   label {
-  border-bottom-color: #fff;
   background: var(--navy);
   color: white;
   border-radius: 10px;
@@ -334,34 +332,41 @@ input[type="checkbox"]:checked ~ .accordion-content {
   display: block;
 }
 
+/* Ensure all tabs and content are visible in contenteditable mode */
+*[contenteditable="true"] .tab-content {
+  display: block !important;
+  padding: 25px;
+  border: 2px solid #cdd5dc;
+}
+
 /* VERTICAL TABS */
 .tabbed-vertical {
   display: flex;
   flex-wrap: nowrap;
-  border: 1px solid #ccc; /* Optional: Give a border to match the horizontal style */
+  border: 1px solid #ccc;
   margin: 10px;
   padding: 0;
 }
 
 .tabbed-vertical .tabs {
   display: flex;
-  flex-direction: column; /* Stack tabs vertically */
+  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300px; /* Set a fixed width for vertical tabs */
-  border-right: 1px solid #ccc; /* Separate tabs and content */
+  width: 300px;
+  border-right: 1px solid #ccc;
   height: 100%;
 }
 
 .tabbed-vertical .tab {
-  flex-grow: 1; /* Make each tab take an equal share of the available height */
+  flex-grow: 1;
 }
 
 .tabbed-vertical .tab > label {
-  display: flex; /* Use flexbox for better control of alignment */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #ccc;
   background: var(--light-grey);
   color: black;
@@ -377,15 +382,16 @@ input[type="checkbox"]:checked ~ .accordion-content {
 }
 
 .tabbed-vertical [type="radio"] {
-  display: none; /* Hide the radio buttons */
+  display: none;
 }
 
 .tabbed-vertical .tab-content {
   display: none;
   color: black;
-  flex: 1; /* Ensures the content takes the remaining space */
+  flex: 1;
 }
 
+/* Show active vertical tab */
 .tabbed-vertical
   [type="radio"]:nth-of-type(1):checked
   ~ .tabs
@@ -433,6 +439,15 @@ input[type="checkbox"]:checked ~ .accordion-content {
   ~ .tab-content:nth-of-type(5) {
   display: block;
 }
+
+/* Ensure all vertical tabs and content are visible in contenteditable mode */
+*[contenteditable="true"] .tabbed-vertical .tab-content {
+  display: block !important;
+  padding: 25px;
+  border: 2px solid #cdd5dc;
+}
+
+/* TABS */
 
 /* The alt timeline container */
 .timeline {
