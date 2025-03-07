@@ -1,39 +1,5 @@
 /* styles.css */
 
-/* Ensure accordions are open in Brightspace editor but closed otherwise */
-.d2l-html-editor .accordion-collapse,
-.d2l-html-editor .collapse {
-  display: block !important;
-  height: auto !important;
-}
-
-:not(.d2l-html-editor) .accordion-collapse:not(.show),
-:not(.d2l-html-editor) .collapse:not(.show) {
-  display: none !important;
-}
-
-/* Tabs: Keep content visible in editor but hidden when inactive */
-.d2l-html-editor .tab-pane {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-:not(.d2l-html-editor) .tab-pane:not(.active) {
-  display: none !important;
-}
-
-/* Click-to-reveal: Ensure visibility in editor */
-.d2l-html-editor [data-bs-toggle="collapse"] {
-  pointer-events: none !important;
-}
-
-.d2l-html-editor .collapse,
-.d2l-html-editor .collapse:not(.show) {
-  display: block !important;
-  height: auto !important;
-}
-
 /* Define custom color variables */
 :root {
   --navy: #002452;
@@ -55,8 +21,8 @@ body {
 }
 h1 {
   text-align: center; /* Center the text */
-  margin-top: 5rem; /* Top margin */
-  margin-bottom: 5rem; /* Bottom margin */
+  margin-top: 3rem; /* Top margin */
+  margin-bottom: 3rem; /* Bottom margin */
   font-size: 2.5rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the text bold (if desired) */
   line-height: 1.2; /* Adjust line height */
@@ -64,8 +30,8 @@ h1 {
 }
 h2 {
   text-align: center; /* Center the text */
-  margin-top: 5rem; /* Top margin */
-  margin-bottom: 5rem; /* Bottom margin */
+  margin-top: 3rem; /* Top margin */
+  margin-bottom: 3rem; /* Bottom margin */
   font-size: 2.5rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the text bold (if desired) */
   line-height: 1.2; /* Adjust line height */
@@ -75,15 +41,15 @@ h3 {
   color: var(--navy); /* Text color */
   font-size: 2rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the subheading bold */
-  margin-top: 3rem; /* Add space above the subheading */
-  margin-bottom: 3rem; /* Add space below the subheading */
+  margin-top: 1rem; /* Add space above the subheading */
+  margin-bottom: 1rem; /* Add space below the subheading */
 }
 h4 {
   color: var(--red); /* Text color */
   font-size: 2rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the subheading bold */
-  margin-top: 3rem; /* Add space above the subheading */
-  margin-bottom: 3rem; /* Add space below the subheading */
+  margin-top: 1rem; /* Add space above the subheading */
+  margin-bottom: 1rem; /* Add space below the subheading */
 }
 p {
   font-size: 1.25rem; /* 'fs-5' in Bootstrap typically means 'font-size: 1.25rem;' */
@@ -158,7 +124,14 @@ input[type="checkbox"]:checked ~ .clickreveal-content {
 .clickreveal-content p {
   margin: 15px 0;
 }
-/* End Click reveal */
+
+/* Ensure click reveal content is always visible in contenteditable mode */
+*[contenteditable="true"] .clickreveal-content {
+  max-height: unset;
+  display: block;
+  padding: 15px;
+  border: 2px solid #cdd5dc;
+}
 
 /* ACCORDION CUSTOM */
 .accordion {
@@ -195,7 +168,23 @@ input[type="checkbox"]:checked ~ .accordion-content {
 .accordion-content * {
   margin: 0; /* Reset margins to avoid extra spacing */
 }
-/* ACCORDION CUSTOM */
+
+/* Ensure accordion content is always visible in contenteditable mode */
+*[contenteditable="true"] .accordion-content {
+  max-height: unset;
+  display: block;
+  padding: 25px;
+  border: 2px solid #cdd5dc;
+}
+
+/* Expand all click reveal and accordion content in contenteditable mode */
+*[contenteditable="true"] .clickreveal-content,
+*[contenteditable="true"] .accordion-content {
+  max-height: unset;
+  display: block;
+  padding: 25px;
+  border: 2px solid #cdd5dc;
+}
 
 .button-link {
   display: inline-flex;
