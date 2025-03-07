@@ -69,7 +69,7 @@ input[type="checkbox"]:checked ~ .collapse {
   overflow: visible;
 }
 
-/* Click reveal */
+/* CLICK REVEAL */
 .clickreveal {
   width: 100%;
   margin: 0 auto;
@@ -132,6 +132,7 @@ input[type="checkbox"]:checked ~ .clickreveal-content {
   padding: 15px;
   border: 2px solid #cdd5dc;
 }
+/* CLICK REVEAL */
 
 /* ACCORDION CUSTOM */
 .accordion {
@@ -146,13 +147,31 @@ input[type="checkbox"]:checked ~ .clickreveal-content {
 }
 
 .accordion-header {
-  display: block;
+  display: flex;
+  justify-content: space-between; /* Pushes text left, icon right */
+  align-items: center;
   padding: 25px;
   background-color: #f5f5f5;
   cursor: pointer;
   font-size: x-large;
+  position: relative;
 }
 
+/* Default state: Add a "+" symbol for collapsed accordions */
+.accordion-header::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: auto; /* Push to the right */
+  transition: transform 0.3s ease-out;
+}
+
+/* Change "+" to "−" when accordion is expanded */
+input[type="checkbox"]:checked + .accordion-header::after {
+  content: "−";
+}
+
+/* Accordion content styling */
 .accordion-content {
   max-height: 0;
   overflow: hidden;
