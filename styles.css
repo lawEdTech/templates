@@ -74,7 +74,7 @@ input[type="checkbox"]:checked ~ .collapse {
 /* CLICK REVEAL */
 .clickreveal {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .clickreveal-item {
@@ -123,9 +123,9 @@ input[type="checkbox"]:checked ~ .clickreveal-content {
   padding: 15px; /* Adds padding when opened */
 }
 
-.clickreveal-content p {
+/* .clickreveal-content p {
   margin: 15px 0;
-}
+} */
 
 /* Ensure click reveal content is always visible in contenteditable mode */
 *[contenteditable="true"] .clickreveal-content {
@@ -140,7 +140,7 @@ input[type="checkbox"]:checked ~ .clickreveal-content {
 .accordion {
   width: 100%;
   max-width: full;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .accordion-item {
@@ -186,9 +186,8 @@ input[type="checkbox"]:checked ~ .accordion-content {
   padding: 25px; /* Ensures all content inside has space */
 }
 
-.accordion-content * {
+/* .accordion-content * {
   margin: 0; /* Reset margins to avoid extra spacing */
-}
 
 /* Ensure accordion content is always visible in contenteditable mode */
 *[contenteditable="true"] .accordion-content {
