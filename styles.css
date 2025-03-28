@@ -55,8 +55,8 @@ p {
   font-size: 1.25rem; /* 'fs-5' in Bootstrap typically means 'font-size: 1.25rem;' */
   width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
   max-width: 100%; /* Ensure the element spans the full width */
-  margin-top: 2rem; /* Add space above the subheading */
-  margin-bottom: 2rem; /* Add space below the subheading */
+  margin-top: 1rem; /* Add space above the subheading */
+  margin-bottom: 1rem; /* Add space below the subheading */
 }
 
 /* Smooth collapse animation */
