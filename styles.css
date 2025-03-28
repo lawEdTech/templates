@@ -41,22 +41,22 @@ h3 {
   color: var(--navy); /* Text color */
   font-size: 2rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the subheading bold */
-  margin-top: 5rem; /* Add space above the subheading */
-  margin-bottom: 5rem; /* Add space below the subheading */
+  margin-top: 2rem; /* Add space above the subheading */
+  margin-bottom: 2rem; /* Add space below the subheading */
 }
 h4 {
   color: var(--red); /* Text color */
   font-size: 2rem; /* Adjust font size as needed */
   font-weight: 500; /* Make the subheading bold */
-  margin-top: 5rem; /* Add space above the subheading */
-  margin-bottom: 5rem; /* Add space below the subheading */
+  margin-top: 2rem; /* Add space above the subheading */
+  margin-bottom: 2rem; /* Add space below the subheading */
 }
 p {
   font-size: 1.25rem; /* 'fs-5' in Bootstrap typically means 'font-size: 1.25rem;' */
   width: 100%; /* 'container-fluid' in Bootstrap typically means 'width: 100%;' */
   max-width: 100%; /* Ensure the element spans the full width */
-  margin-top: 5rem; /* Add space above the subheading */
-  margin-bottom: 5rem; /* Add space below the subheading */
+  margin-top: 2rem; /* Add space above the subheading */
+  margin-bottom: 2rem; /* Add space below the subheading */
 }
 
 /* Smooth collapse animation */
@@ -183,7 +183,7 @@ input[type="checkbox"]:checked + .accordion-header::after {
 
 input[type="checkbox"]:checked ~ .accordion-content {
   max-height: 10000px;
-  padding: 25px; /* Ensures all content inside has space */
+  padding: 2rem; /* Ensures all content inside has space */
 }
 
 /* .accordion-content * {
