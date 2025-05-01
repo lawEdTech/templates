@@ -120,7 +120,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked ~ .clickreveal-content {
-  max-height: 500px;
+  max-height: 10000px;
   padding: 15px; /* Adds padding when opened */
 }
 
