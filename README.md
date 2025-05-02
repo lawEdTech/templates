@@ -16,7 +16,7 @@ While working in the d2l brightspace editor, only HTML is accepted. Therefore an
 
 ### Helpful VS Code extensions while working on this project
 
-Prettier (Code Formatter) by prettier.io
-HTML CSS Support (Visual Studio Code CSS Intellisense for HTML) by ecmel
-Live Server by Ritwick Dey
+- Prettier (Code Formatter) by prettier.io
+- HTML CSS Support (Visual Studio Code CSS Intellisense for HTML) by ecmel
+- Live Server by Ritwick Dey
 
