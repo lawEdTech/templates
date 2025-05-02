@@ -20,3 +20,6 @@ While working in the d2l brightspace editor, only HTML is accepted. Therefore an
 - HTML CSS Support (Visual Studio Code CSS Intellisense for HTML) by ecmel
 - Live Server by Ritwick Dey
 
+### Using the Templates
+Follow the 'Guide to using HTML Templates' pdf in this repository to get started with using these templates in D2L Brightspace!
+
